@@ -1,0 +1,23 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "Create a command-line application that dynamically generates a README.md from a user's input. The application will be invoked with the following command:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "inquirer": "^6.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anieto86/9-Readme-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Anieto86/9-Readme-Generator/issues"
+  },
+  "homepage": "https://github.com/Anieto86/9-Readme-Generator#readme"
+}
