@@ -5,10 +5,16 @@ let fs = require("fs");
 
 const questions = inquirer.prompt([
     {
+        type: "list",
+        name: "Table of content",
+        message: "Table of Content",
+        choices: ["* Title", "* Description", "* Table of Contents", "* Installation","* Usage","* License", "* Contributing","* Tests","* Questions"],
+    },
+    {
         type: "input",
         name: "Project title",
-        message: "Project title",
-        default: "NodeJS Readme-Generator"
+        message: "Project title :",
+
     },
     {
         type: "input",
@@ -34,7 +40,7 @@ const questions = inquirer.prompt([
         name: "License",
         message: "Open source license",
         default: "YES",
-        
+
     },
     {
         type: "input",
@@ -43,16 +49,37 @@ const questions = inquirer.prompt([
 
     },
 
+    {
+        type: "input",
+        name: "email",
+        message: "Email address : ",
+        validate: function (values) {
+            let pass = values.match(
+                /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+            if (pass) {
+                return true;
+            } return "Please enter a valid email"
+        }
+    },
+
+// Table of content
+
+//fs.appendFile(READMEal.md)
+
+
+
+
     //README Templated
 
-]).then(function(data) {
-    fs.writeFile("README.md", JSON.stringify(data, null, '\t'), function(err) {
 
+
+]).then(function (data) {
+    fs.writeFile("READMEal.md", JSON.stringify(data, null, '\t'), function (err) {
         if (err) {
             return console.log(err);
         }
-    
         console.log("Success!");
     });
-    });
+});
 
