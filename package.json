@@ -10,7 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.0.0",
-    "inquirer": "^6.5.2"
+    "inquirer": "^6.5.2",
+    "util": "^0.12.2"
   },
   "repository": {
     "type": "git",

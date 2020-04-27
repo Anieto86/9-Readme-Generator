@@ -1,10 +1,18 @@
 {
-	"Table of content": "* Installation",
-	"Project title": "alllllll",
+	"Project title": "",
 	"Description": "NodeJS prompt input",
 	"Contributing": "Alvaro 99.7%",
 	"Test": "Node.JS is running",
 	"License": "YES",
-	"GitHub": "alva$",
-	"email": "alvaro16nieto@gmail.com"
+	"GitHub": "",
+	"email": "asdasd@asdas.com"
 }
+        * Title
+        * Description
+        * Table of Contents
+        * Installation
+        * Usage
+        * License
+        * Contributing
+        * Tests
+        * Questions
