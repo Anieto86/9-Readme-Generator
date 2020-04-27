@@ -1,11 +1,11 @@
 {
-	"Project title": "",
-	"Description": "NodeJS prompt input",
+	"Project title": "afeds",
+	"Description": "ads",
 	"Contributing": "Alvaro 99.7%",
-	"Test": "Node.JS is running",
-	"License": "YES",
-	"GitHub": "",
-	"email": "asdasd@asdas.com"
+	"Test": "a",
+	"License": "ads",
+	"GitHub": "ad",
+	"email": "adasjkd@abdj.com"
 }
         * Title
         * Description

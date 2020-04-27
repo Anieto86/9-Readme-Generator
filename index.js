@@ -74,8 +74,6 @@ let table = `
         * Tests
         * Questions`;
 
-
-        
 promptUser()
     .then(function (data) {
         fs.writeFile("READMEal.md", JSON.stringify(data, null, '\t'), function (err) {
@@ -84,10 +82,12 @@ promptUser()
             }
             console.log("Success");
         });
-    })
+    }) //Remplated append
     .then(function () {
         fs.appendFile("READMEal.md", table, function (err) {
             if (err) throw err;
             console.log("Saved!");
           });
     });
+
+    
